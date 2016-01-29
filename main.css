@@ -1,0 +1,18 @@
+html {
+  font-size: 26px;
+  color: #222;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 5.5em;
+  text-align: center;
+  letter-spacing: -5px;
+  margin: 50px 0;
+  line-height: 1em;
+}
