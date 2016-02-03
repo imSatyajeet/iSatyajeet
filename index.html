@@ -3,14 +3,3 @@
 <p>
     I do stuff!
 </p>
-
-<script>
-  var xhr = new XMLHttpRequest();
-  if ("withCredentials" in xhr) {
-    xhr.open('POST', 'https://api.oasis.sandstorm.io/t', true);
-    xhr.setRequestHeader('Authorization',
-                         'Bearer JEKlYKpqOrgpGV4FqB3Hww6z9MCfx80ss5DM4ztTXns');
-    xhr.setRequestHeader('X-Sandstorm-Passthrough', 'address');
-    xhr.send(null);
-  }
-</script>
