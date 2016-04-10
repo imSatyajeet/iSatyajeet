@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/satyajeet
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://isatyajeet.com
+  * I am satyajeet (https://keybase.io/satyajeet) on keybase.
+  * I have a public key with fingerprint 4C09 4BCC 4575 534F 2A1D  FF73 5DA0 039B 9618 8E2E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e91fd3b5ba091488ac87b4baaf99807b18b4ce21c63997a4a0f71d6681f883eb0a",
+            "fingerprint": "4c094bcc4575534f2a1dff735da0039b96188e2e",
+            "host": "keybase.io",
+            "key_id": "5da0039b96188e2e",
+            "kid": "0101e91fd3b5ba091488ac87b4baaf99807b18b4ce21c63997a4a0f71d6681f883eb0a",
+            "uid": "c25cf077a569cf3d55f257c626965419",
+            "username": "satyajeet"
+        },
+        "service": {
+            "hostname": "isatyajeet.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1460305869,
+    "expire_in": 157680000,
+    "prev": "9b20bb17ea7dcd75d583af981b80819aea4b15ff4ca3f8baa95e31bdbea0066f",
+    "seqno": 17,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMInAnicrZJdSBVBGIbXMtOTpRQVhAUtFYFH2Tm7sztrWFpUlppClhdmp5nZ2eN6
+bPd4zmqdRKQoUgmiwqIiupDCm8L+KErpx/zp7yIhFMEMgyDJiKjQq5qV6qrL5maY
+b573ne97mafzZwu+hHdl4eoF6V/8CS8eX6gTyn1NrxpE4hhxMadBDLOZjdUYLOYG
+w5Yh5ogSkADTgWnIBBIs6UBBCFOkEYVgbOo6kjQCEFEoCwCqyrquYQVLpgYMVUXA
+REhmRMKiXzQtO8Sikahlu9xWoZKuEEoVqEEoK2YAA8M0NRkaWJJknegqQIgFGBdW
+OTFPwZsjOMayLYfX+CE4094/+P/cd92MHQ1AakqahqGqU1M2IDQDUKNqQNVVqADd
+A2MsauP9jNMx7MZxNWOu2OgXebneosxL1hvlN2L9ZbKps5/LI1HHdahTw++qXDeS
+40ndeMRjDzAS/O0SJJZt8CS5oJ5FY5ZjizmAk9S1PFugqJIsQaTqfpEdjFhRFrQ8
+AmoqkvjynmH13FInAYkQoDGsGdTQoAGRzGNBgCAJAR0zrBAATVOhWDYRj0yHTAbE
+IIznraqm6M1VazvcW+N94pA3tRWysVsXZWLjk0d7EoUEn5A0Z5b3xQRfSvqfj5d3
+I1non8y4Pt7bHR6qvPtl47zY7sPnij4NxteuCwy0BMuedRUnnoj7Vm8u3jZi0JtF
+ox1ZhS2lS7qatxZUKjWKz3hwLPwm3HdoVflUsKFgUtiUH4TlmSnD3+wN76uMH8kd
+Vn/XnDPhsavkaNrFK754tF49M/fnh8HMkvaXra87981vGtv55AbrSB3fknZ6PPd2
+9vrx5u2hgmvHvx+puL9ymTnW11O6oVMqGsyzd5WN3en9PJR0e2Bxu5jRs2b60HBW
+ebhgalZn0sR0xcNNt5ZPkVqhra2p9ePj1PMrkt/uKBnJmmw9tXBvxsnK3GHBmugY
+/brocqii4fnopXvd4Oxg5VJ/fmHaL2ExPaY=
+=OG2S
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/satyajeet
+
+==================================================================
