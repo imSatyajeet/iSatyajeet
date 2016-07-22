@@ -1,0 +1,228 @@
+Client Source Code :
+<br>
+ement using Socket Programming (TCP/UDP) in JavaC
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+package com.prac.prac;  
+ import java.io.BufferedReader;  
+ import java.io.InputStreamReader;  
+ import java.io.PrintStream;  
+ import java.net.ServerSocket;  
+ import java.net.Socket;  
+ public class client {  
+      public static void main(String[] args) {  
+           int port=5001;  
+           try {  
+                Socket clientSocket=new Socket("localhost",port);  
+                System.out.println("Client Started");  
+                InputStreamReader isr = new InputStreamReader(System.in);  
+                BufferedReader br = new BufferedReader(isr);  
+                PrintStream toServer=new PrintStream(clientSocket.getOutputStream());  
+                BufferedReader fromServer=new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));  
+                String menu="SOCKET PROGRAMMING MENU\n1.FACTORIAL\n2.SUM OF DIGITS OF A NO\n3.String Operation\n4.EXIT\nENTER UR CHOICE";  
+                int choice=-1;  
+                do  
+                {  
+                     toServer.flush();  
+                     System.out.println(menu);  
+                     choice=Integer.parseInt(br.readLine());  
+                     toServer.println(choice);  
+                     toServer.flush();  
+                     switch(choice)  
+                     {  
+                     case 1:  
+                          System.out.println("ENTER A NO:");  
+                          int no=Integer.parseInt(br.readLine());  
+                          toServer.println(no);  
+                          int result=Integer.parseInt(fromServer.readLine());  
+                          System.out.println("FACTORIAL IS:"+result);  
+                          break;  
+                     case 2:  
+                          System.out.println("ENTER A NO:");  
+                          no=Integer.parseInt(br.readLine());  
+                          toServer.println(no);  
+                          result=Integer.parseInt(fromServer.readLine());  
+                          System.out.println("SUM OF EACH DIGITS IS:"+result);  
+                          break;  
+                     case 3:  
+                          String stringmenu="STRING OPERATION MENU\n1.LENGTH\n2.COMPARE\n3.CONCATENATE\n4.IS STRING IS PALINDROME\n5.SUBSTRING\n6.EXIT\nENTER UR CHOICE";  
+                          int stringChoice;  
+                          do  
+                          {  
+                               System.out.println(stringmenu);  
+                               stringChoice=Integer.parseInt(br.readLine());  
+                               toServer.println(stringChoice);  
+                               toServer.flush();  
+                               switch(stringChoice)  
+                               {  
+                               case 1:  
+                                    System.out.println("ENTER A String:");  
+                                    String str=br.readLine();  
+                                    toServer.println(str);  
+                                    result=Integer.parseInt(fromServer.readLine());  
+                                    System.out.println("LENGTH IS:"+result);  
+                                    break;  
+                               case 2:  
+                                    System.out.println("ENTER First String:");  
+                                    String first_str=br.readLine();  
+                                    toServer.println(first_str);  
+                                    System.out.println("ENTER Second String:");  
+                                    String second_str=br.readLine();  
+                                    toServer.println(second_str);  
+                                    String str_result=fromServer.readLine();  
+                                    System.out.println(str_result);  
+                                    break;  
+                               case 3:  
+                                    System.out.println("ENTER First String:");  
+                                    first_str=br.readLine();  
+                                    toServer.println(first_str);  
+                                    System.out.println("ENTER Second String:");  
+                                    second_str=br.readLine();  
+                                    toServer.println(second_str);  
+                                    str_result=fromServer.readLine();  
+                                    System.out.println("CONCANATED STRING IS"+str_result);  
+                                    break;  
+                               case 4:  
+                                    System.out.println("ENTER A String:");  
+                                    str=br.readLine();  
+                                    toServer.println(str);  
+                                    str_result=fromServer.readLine();  
+                                    System.out.println("PALINDROME RESULT:"+str_result);  
+                                    break;  
+                               case 5:  
+                                    System.out.println("ENTER First String:");  
+                                    first_str=br.readLine();  
+                                    toServer.println(first_str);  
+                                    System.out.println("ENTER Second(it is checkd as substring) String:");  
+                                    second_str=br.readLine();  
+                                    toServer.println(second_str);  
+                                    str_result=fromServer.readLine();  
+                                    System.out.println("Substring Result:"+str_result);  
+                                    break;  
+                               case 6:  
+                                    break;  
+                               }  
+                          }while(stringChoice!=6);  
+                          break;  
+                     case 4:  
+                          break;  
+                     default:  
+                          System.out.println("INVALID CHOICE");  
+                     }  
+                }while(choice!=4);  
+           } catch (Exception e) {  
+                // TODO Auto-generated catch block  
+           }  
+      }  
+ }
